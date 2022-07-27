@@ -31,21 +31,22 @@
   --color-bg: hsl(230, 17%, 14%);
   --color-bg-top: hsl(232, 19%, 15%);
   --color-card-bg: hsl(228, 28%, 20%);
-  --color-text-primary: hsl(228, 34%, 66%);
-  --color-text-secondary: hsl(0, 0%, 100%);
+  --color-text-primary: hsl(0, 0%, 100%);
+  --color-text-secondary: hsl(228, 34%, 66%);
 }
 
 .theme-light {
   --color-bg: hsl(0, 0%, 100%);
   --color-bg-top: hsl(225, 100%, 98%);
   --color-card-bg: hsl(227, 47%, 96%);
-  --color-text-primary: hsl(228, 12%, 44%);
-  --color-text-secondary: hsl(230, 17%, 14%);
+  --color-text-primary: hsl(230, 17%, 14%);
+  --color-text-secondary: hsl(228, 12%, 44%);
 }
 
 body {
   font-size: 1.4rem;
   background-color: var(--color-bg);
+  color: var(--color-text-primary);
 }
 
 /* -------------------------- style the attribution ------------------------- */
