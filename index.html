@@ -20,42 +20,52 @@
     <title>Frontend Mentor | Social Media Dashboard</title>
   </head>
   <body>
-    <header>
-      <h1 class="heading-main">Social Media Dashboard</h1>
-      <p class="follower-total">
-        Total Followers: <span class="total-count">23,004</span>
-      </p>
-      <div class="dark-mode-toggle">
-        Dark Mode
-        <input type="checkbox" name="toggle-colors" id="toggle-colors" />
-      </div>
-    </header>
     <main>
-      <section>
+      <header>
+        <div class="header-text">
+          <h1 class="heading-main">Social Media Dashboard</h1>
+          <p class="follower-total">
+            Total Followers: <span class="total-count">23,004</span>
+          </p>
+        </div>
+        <div class="dark-mode-toggle">
+          <span>Dark Mode</span>
+          <input type="checkbox" name="toggle-colors" id="toggle-colors" />
+        </div>
+      </header>
+      <section id="large-cards">
         <article class="card big facebook">
-          <div class="username">@nathanf</div>
-          <div class="followers"><span class="count">1987</span> Followers</div>
+          <div class="username">
+            <img src="images/icon-facebook.svg" alt="facebook image" />@nathanf
+          </div>
+          <div class="followers"><span class="count">1987</span>Followers</div>
           <div class="daily-change"><span class="count">12</span> Today</div>
         </article>
         <article class="card big twitter">
-          <div class="username">@nathanf</div>
-          <div class="followers"><span class="count">1044</span> Followers</div>
+          <div class="username">
+            <img src="images/icon-twitter.svg" alt="" />@nathanf
+          </div>
+          <div class="followers"><span class="count">1044</span>Followers</div>
           <div class="daily-change"><span class="count">99</span> Today</div>
         </article>
         <article class="card big snapchat">
-          <div class="username">@realnathanf</div>
-          <div class="followers"><span class="count">11k</span> Followers</div>
+          <div class="username">
+            <img src="images/icon-instagram.svg" alt="" />@realnathanf
+          </div>
+          <div class="followers"><span class="count">11k</span>Followers</div>
           <div class="daily-change"><span class="count">1099</span> Today</div>
         </article>
         <article class="card big youtube">
-          <div class="username">Nathan F.</div>
-          <div clas="followers">
-            <span class="count">8239</span> Subscribers
+          <div class="username">
+            <img src="images/icon-youtube.svg" alt="" />Nathan F.
+          </div>
+          <div class="followers">
+            <span class="count">8239</span>Subscribers
           </div>
           <div class="daily-change"><span class="count">144</span> Today</div>
         </article>
       </section>
-      <section>
+      <section id="small-cards">
         <h2 class="heading-overview">Overview - Today</h2>
         <article class="card small facebook">
           <div class="card-heading">Page Views</div>

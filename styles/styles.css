@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 :root {
@@ -33,6 +33,7 @@
   --color-card-bg: hsl(228, 28%, 20%);
   --color-text-primary: hsl(0, 0%, 100%);
   --color-text-secondary: hsl(228, 34%, 66%);
+  --color-separator: hsl(228, 25%, 27%);
 }
 
 .theme-light {
@@ -41,12 +42,118 @@
   --color-card-bg: hsl(227, 47%, 96%);
   --color-text-primary: hsl(230, 17%, 14%);
   --color-text-secondary: hsl(228, 12%, 44%);
+  --color-separator: hsl(230, 19%, 60%);
 }
 
 body {
   font-size: 1.4rem;
   background-color: var(--color-bg);
   color: var(--color-text-primary);
+  padding: 36px 24px 45px 24px;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------- style the header (also contains toggle) ---------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header-text {
+  border-bottom: 1px solid var(--color-separator);
+}
+
+.heading-main {
+  font-size: 2.4rem;
+}
+
+.follower-total {
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: var(--color-text-secondary);
+}
+
+/* -------------------------- style the 2 sections -------------------------- */
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section#large-cards {
+  row-gap: 24px;
+}
+
+section#small-cards {
+  row-gap: 16px;
+}
+
+/* -------------------------- style the base cards -------------------------- */
+.card {
+  background-color: var(--color-card-bg);
+  border-radius: 5px;
+}
+
+.card.big {
+  padding: 32px 0 24px 0;
+  text-align: center;
+}
+
+.card .username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
+.card .followers {
+  margin: 28px 0 25px 0;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+}
+
+.card .followers .count {
+  font-size: 5.6rem;
+  color: var(--color-text-primary);
+}
+
+.card .daily-change {
+  font-size: 1.2rem;
+}
+
+.facebook {
+  border-top: 4px solid var(--facebook);
+}
+
+.twitter {
+  border-top: 4px solid var(--twitter);
+}
+
+.snapchat {
+  border-top: 4px solid green;
+}
+
+.youtube {
+  border-top: 4px solid var(--youTube);
 }
 
 /* -------------------------- style the attribution ------------------------- */
@@ -55,5 +162,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-text-secondary);
 }
