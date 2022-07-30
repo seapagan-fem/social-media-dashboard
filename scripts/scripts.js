@@ -25,4 +25,6 @@ matchMedia.addEventListener("change", (e) => {
 });
 
 // set correct mode on refresh
-setMode(matchMedia.matches);
+// disabled for project submission since the reference is dark mode
+// setMode(matchMedia.matches);
+setMode(true)
