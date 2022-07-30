@@ -255,6 +255,7 @@ section#small-cards .heading-overview {
   justify-content: space-between;
   color: var(--color-text-secondary);
   margin-bottom: 23px;
+  font-size: 1.4rem;
 }
 
 .metrics {
@@ -287,12 +288,14 @@ section#small-cards .heading-overview {
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 600px) {
   body {
+    max-width: unset;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 0;
   }
 
   header {
