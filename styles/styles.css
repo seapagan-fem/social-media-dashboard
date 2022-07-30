@@ -31,7 +31,8 @@
 .theme-dark {
   --color-bg: hsl(230, 17%, 14%);
   --color-bg-top: hsl(232, 19%, 15%);
-  --color-card-bg: hsl(228, 28%, 20%);
+  --color-card-bg: hsl(229, 27%, 20%);
+  --color-card-bg-hover: hsl(228, 25%, 27%);
   --color-text-primary: hsl(0, 0%, 100%);
   --color-text-secondary: hsl(228, 34%, 66%);
   --color-separator: hsl(228, 25%, 27%);
@@ -41,6 +42,7 @@
   --color-bg: hsl(0, 0%, 100%);
   --color-bg-top: hsl(225, 100%, 98%);
   --color-card-bg: hsl(227, 47%, 96%);
+  --color-card-bg-hover: hsl(228, 33%, 91%);
   --color-text-primary: hsl(230, 17%, 14%);
   --color-text-secondary: hsl(228, 12%, 44%);
   --color-separator: hsl(230, 19%, 60%);
@@ -341,5 +343,18 @@ section#small-cards .heading-overview {
 
   .heading-overview {
     grid-column: span 4;
+  }
+
+  .theme-dark .dark-mode-toggle:hover {
+    color: white;
+  }
+
+  .theme-light .toggle:hover {
+    background: linear-gradient(to right, var(--dark-toggle-grad));
+  }
+
+  .card:hover {
+    background-color: var(--color-card-bg-hover);
+    cursor: pointer;
   }
 }
