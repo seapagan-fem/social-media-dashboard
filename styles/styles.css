@@ -283,7 +283,7 @@ section#small-cards .heading-overview {
 /* -------------------------------------------------------------------------- */
 /*                                media queries                               */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   body {
     position: relative;
     display: flex;
@@ -315,12 +315,12 @@ section#small-cards .heading-overview {
   }
 
   section {
-    grid-template-columns: repeat(4, 255px);
+    grid-template-columns: repeat(2, 255px);
     grid-gap: 30px;
   }
 
   .heading-overview {
-    grid-column: span 4;
+    grid-column: span 2;
     font-size: 2.4rem;
   }
 
@@ -331,5 +331,15 @@ section#small-cards .heading-overview {
   footer {
     position: absolute;
     bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    grid-template-columns: repeat(4, 255px);
+  }
+
+  .heading-overview {
+    grid-column: span 4;
   }
 }
