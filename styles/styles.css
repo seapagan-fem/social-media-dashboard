@@ -212,6 +212,26 @@ section#small-cards .heading-overview {
   font-size: 1.2rem;
 }
 
+.card .up {
+  color: var(--limegreen);
+}
+
+.card .up::before {
+  content: url(../images/icon-up.svg);
+  padding: 0 4px 0 0;
+  vertical-align: 13%;
+}
+
+.card .down {
+  color: var(--bright-red);
+}
+
+.card .down::before {
+  content: url(../images/icon-down.svg);
+  padding-right: 4px;
+  vertical-align: 13%;
+}
+
 /* ------------------- style the big cards by social media ------------------ */
 .card.big.facebook::before {
   background: var(--facebook);
