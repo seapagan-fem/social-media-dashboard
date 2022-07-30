@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [GitHub Pages](https://seapagan-fem.github.io/social-media-dashboard/)
-- Solution URL: [Frontend Mentor](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-grid-dashboard-with-lightdark-mode-from-os-default-p9ouKa4LF4)
 
 ## My process
 
