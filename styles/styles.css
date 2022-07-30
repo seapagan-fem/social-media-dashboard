@@ -48,16 +48,13 @@
 
 /* -------------------------- body and main styles -------------------------- */
 body {
+  max-width: 400px;
+  margin: 0 auto;
   font-size: 1.4rem;
   background-color: var(--color-bg);
   color: var(--color-text-primary);
   padding: 36px 24px 45px 24px;
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 /* ----------------- style the header (also contains toggle) ---------------- */
@@ -152,6 +149,7 @@ section#small-cards .heading-overview {
   background-color: var(--color-card-bg);
   border-radius: 5px;
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  max-width: 400px;
 }
 
 .card.big {
@@ -173,7 +171,7 @@ section#small-cards .heading-overview {
 }
 
 .card.small {
-  padding: 26px 31px 24px 24px;
+  padding: 26px 31px 19px 24px;
 }
 
 .card .username {
@@ -269,7 +267,6 @@ section#small-cards .heading-overview {
 
 .metrics .percent {
   font-size: 1.2rem;
-  /* align-self: flex-end; */
 }
 
 /* -------------------------- style the attribution ------------------------- */
@@ -281,4 +278,58 @@ section#small-cards .heading-overview {
 .attribution a {
   color: var(--color-text-secondary);
   text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                media queries                               */
+/* -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  header {
+    flex-direction: row;
+    margin-bottom: 46px;
+  }
+
+  .header-text {
+    border-bottom: none;
+  }
+
+  .follower-total {
+    margin-bottom: 0;
+  }
+
+  .heading-main {
+    font-size: 2.8rem;
+  }
+
+  .toggle {
+    margin-left: 13px;
+  }
+
+  section {
+    grid-template-columns: repeat(4, 255px);
+    grid-gap: 30px;
+  }
+
+  .heading-overview {
+    grid-column: span 4;
+    font-size: 2.4rem;
+  }
+
+  .card {
+    max-width: 255px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 16px;
+  }
 }
